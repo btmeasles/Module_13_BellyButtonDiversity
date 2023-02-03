@@ -100,7 +100,10 @@ function buildCharts(sample) {
     var barLayout = {
       title:"Top 10 Bacterial Cultures Found",
       xaxis: {title: "# of Samples"},
-      yaxis: { title: "Bacterial ID"}}
+      yaxis: { title: "Bacterial ID"},
+      paper_bgcolor: "aliceblue",
+      font: {color: "darkblue"}
+    }
     // Deliverable 1: 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot('bar', barData, barLayout);
     // Deliverable 2: 1. Create the trace for the bubble chart.
@@ -133,11 +136,14 @@ function buildCharts(sample) {
         title: "OTU ID"
       },
       margin: {
-        l: 65,
-        r: 65,
+        l: 75,
+        r: 75,
         t: 50,
         b: 50
-      }}
+      },
+      paper_bgcolor: "aliceblue",
+      font: {color: "darkblue"}
+    }
     // Deliverable 2: 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout)
     // Deliverable 3: 3. Create a variable that holds the washing frequency.
@@ -170,9 +176,9 @@ function buildCharts(sample) {
     }]
     // Deliverable 3: 5. Create the layout for the gauge chart.
     var gaugeLayout = {
-      width: 500,
-      height: 400,
-      margin: { t: 25, r: 25, l: 25, b: 25 },
+      width: 460,
+      height: 450,
+      margin: { t: 50, r: 50, l: 50, b: 50 },
       paper_bgcolor: "aliceblue",
       font: {color: "darkblue"}
     };
